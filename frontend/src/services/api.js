@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const rawBaseUrl = process.env.REACT_APP_API_URL || 'http://localhost:5050/api';
+const rawBaseUrl = process.env.REACT_APP_API_URL || 'https://urban-food-q7r4.onrender.com/api';
 const API_BASE_URL = rawBaseUrl.replace(/\/+$/, '');
 const API_TIMEOUT_MS = Number(process.env.REACT_APP_API_TIMEOUT_MS || 15000);
 const ENABLE_API_LOGS = process.env.NODE_ENV === 'development' || process.env.REACT_APP_ENABLE_API_LOGS === 'true';
